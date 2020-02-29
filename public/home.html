@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="../css/home_style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <section class="wrapper">
+    <header class="header">Header</header>
+    <section class="content">
+      <section class="columns">
+
+        <section class="main">
+          <section class="question">
+            <p>HTML Stands for?</p>
+          </section>
+          <section class="options">
+            <ul>
+              <li>Hyper Text Markup Language</li>
+              <li>High Text Markup Languages</li>
+              <li>Hyper Tabular Markup Language</li>
+              <li>None of these</li>
+            </ul>
+          </section>
+
+
+          <section class="moving_buttons">
+              <button class="progress_btns">Previous</button>
+              <button class="progress_btns" id="next_btn">Next</button>
+          </section>
+
+
+        </section>
+
+        <section id="first-sidebar" class="sidebar-first">
+          <!-- <iframe src="menu.html" style="border:none;"></iframe> -->
+          <!-- Seperate menu page-->
+
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fas fa-bars" id="btn" onclick="onSideBarOpen()"></i>
+            <i class="fas fa-times" id="cancel" onclick="onSideBarClosed()"></i>
+          </label>
+          <section class="sidebar">
+            <header>Categories</header>
+            <a href="#" class="active">
+              <i class="fas fa-qrcode"></i>
+              <span>Sports</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-link"></i>
+              <span>Computer</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-stream"></i>
+              <span>Science</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-calendar"></i>
+              <span>Mathematics</span>
+            </a>
+            <a href="#">
+              <i class="far fa-question-circle"></i>
+              <span>Culture</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-sliders-h"></i>
+              <span>Social</span>
+            </a>
+            <a href="#">
+              <i class="far fa-envelope"></i>
+              <span>Chemistry</span>
+            </a>
+          </section>
+
+        </section>
+        <section class="sidebar-second">
+
+          <hr color="black">
+          <h1>Question</h1>
+          <h1>6/10</h1>
+          <hr color="black">
+
+          <section class="question_number">
+            <input type="button" class="one" value="1" />
+            <input type="button" class="two" value="2" />
+            <input type="button" class="three" value="3" />
+            <input type="button" class="four" value="4" />
+            <input type="button" class="five" value="5" />
+            <input type="button" class="six" value="6" />
+            <input type="button" class="seven" value="7" />
+            <input type="button" class="eight" value="8" />
+            <input type="button" class="nine" value="9" />
+            <input type="button" class="ten" value="10" />
+          </section>
+
+          <div class="countdown">
+            <h1 class="timer_header">Time</h1>
+            <div class="square">
+              <div class="digits" id="cd-min">00</div>
+              <div class="text">MINUTES</div>
+            </div>
+            <div class="square">
+              <div class="digits" id="cd-sec">00</div>
+              <div class="text">SECONDS</div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </section>
+    <!-- <footer class="footer">Footer</footer> -->
+  </section>
+</body>
+
+</html>
